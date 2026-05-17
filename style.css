@@ -110,7 +110,7 @@ html::-webkit-scrollbar-thumb:hover {
       border-top: 0.1rem solid rgba(0, 0, 0, 0.4);
       display: none;
     }
-    .n.navbar.active {
+    .navbar.active {
         display: block;
     }
       
@@ -293,12 +293,17 @@ span{
     }
 }
 @media (max-width: 995px) {
+    .home {
+        min-height: auto !important;
+        padding: 2rem 5% !important;
+    }
+
     .home-container {
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        gap: 4rem !important;
-        padding: 120px 20px 50px !important;
+        gap: 3rem !important;
+        padding: 80px 10px 30px !important;
     }
 
     .home-img {

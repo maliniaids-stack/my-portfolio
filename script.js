@@ -2,7 +2,7 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav ul li a');
+let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
     let top = window.scrollY; 
@@ -14,7 +14,8 @@ window.onscroll = () => {
         if (top >= offset && top < offset + height) {
             navLinks.forEach(link => {
                 link.classList.remove('active'); 
-                document.querySelector(`header nav ul li a[href="#${id}"]`).classList.add('active');
+                const targetLink = document.querySelector(`header nav a[href="#${id}"]`);
+                if (targetLink) targetLink.classList.add('active');
             });
         }
     });
@@ -24,6 +25,14 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x'); 
     navbar.classList.toggle('active'); 
 };
+
+// Close mobile menu when a nav link is clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+    });
+});
 
 // ----- New EmailJS Contact Form Logic -----
 emailjs.init("gD29Py0J8nz_ymwSL");
