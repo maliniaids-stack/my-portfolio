@@ -293,20 +293,42 @@ span{
     }
 }
 @media (max-width: 995px) {
-    .home {
-        flex-direction: column;
-        margin: 5rem 3rem;
+    .home-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 4rem !important;
+        padding: 120px 20px 50px !important;
     }
 
-    .home-content h3 {
-        font-size: 2.5rem;
+    .home-img {
+        width: 250px !important;
+        height: 250px !important;
+        margin: 0 auto 1.5rem !important;
     }
 
-    .home-content h1 {
-        font-size: 5rem;
+    .home-text {
+        text-align: center !important;
+        align-items: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        max-width: 100% !important;
     }
 
-    
+    .social-and-buttons {
+        align-items: center !important;
+        margin-top: 1.5rem !important;
+    }
+
+    .home-text h1 {
+        font-size: 3.8rem !important;
+        text-align: center !important;
+    }
+
+    .home-description {
+        text-align: center !important;
+        margin: 1.5rem auto 0 !important;
+    }
 }
 .services {
     background: var(--second-bg-color);
