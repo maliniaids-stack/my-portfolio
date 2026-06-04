@@ -1,3 +1,8 @@
+## 📸 Screenshot
+Here’s a preview of the portfolio:
+
+![Portfolio Screenshot](./screenshot.png)
+
 # Malini S Portfolio
 
 A personal portfolio website built using HTML, CSS, and JavaScript with a comic/manga-inspired UI.
@@ -43,4 +48,4 @@ Artificial Intelligence & Data Science Student
 Web Developer | AI Enthusiast 
 
 ## Live Demo
-malinisportfolio.netlify.app
+👉 [https://malinisportfolio.netlify.app/](https://malinisportfolio.netlify.app/)
